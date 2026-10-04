@@ -1,0 +1,28 @@
+{
+	"name": "sheepbutler",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev",
+		"cf-typegen": "wrangler types",
+		"type-check": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@cloudflare/workers-oauth-provider": "^0.8.1",
+		"@modelcontextprotocol/sdk": "^1.29.0",
+		"agents": "^0.17.1",
+		"hono": "^4.12.27",
+		"zod": "^4.4.3"
+	},
+	"devDependencies": {
+		"typescript": "6.0.3",
+		"wrangler": "^4.105.0"
+	},
+	"allowScripts": {
+		"esbuild@0.28.2": true,
+		"esbuild@0.28.1": true,
+		"workerd@1.20261001.1": true
+	}
+}
